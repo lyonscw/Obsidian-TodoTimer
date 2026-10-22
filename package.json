@@ -1,0 +1,34 @@
+{
+  "name": "todotimer",
+  "version": "0.1.3",
+  "private": true,
+  "description": "Track Markdown tasks and progress in Obsidian with automatic timestamps.",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "benchmark": "node scripts/benchmark.mjs",
+    "build": "npm run check && node esbuild.config.mjs production",
+    "package": "npm run build && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@codemirror/commands": "6.8.1",
+    "@codemirror/language": "6.11.3",
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@lezer/common": "^1.5.3",
+    "@lezer/markdown": "^1.8.1",
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "fflate": "^0.8.3",
+    "jsdom": "^30.1.3",
+    "obsidian": "1.12.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  },
+  "overrides": {
+    "moment": "2.31.0"
+  }
+}

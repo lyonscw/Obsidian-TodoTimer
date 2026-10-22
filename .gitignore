@@ -1,0 +1,10 @@
+node_modules/
+main.js
+main.js.map
+dist/
+coverage/
+.qa-vault/
+.qa-artifacts/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

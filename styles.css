@@ -1,0 +1,17 @@
+.todotimer-time {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-s, 4px);
+  padding: 0.05em 0.3em;
+  white-space: nowrap;
+}
+
+.todotimer-time-completed {
+  color: var(--text-success, var(--text-muted));
+}
+
+.markdown-source-view.mod-cm6 .todotimer-time {
+  padding: 0;
+}

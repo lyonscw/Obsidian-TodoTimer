@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21T04:39:11.350Z",
+  "host": "Obsidian 1.14.4 / Windows",
+  "before": {
+    "version": "0.1.0",
+    "steps": [
+      "父任务末Enter延续空任务",
+      "Tab缩进",
+      "实际中文输入法a+Space确认“啊”",
+      "CtrlLeft到正文前",
+      "Backspace四次移除[ ] ",
+      "End、Enter"
+    ],
+    "expected": "普通记录“啊”末尾有裸时间",
+    "actual": "# 普通记录复现\n\n- [ ] 父任务\n\t- 啊\n\t- 啊 20261021 12:38\n\t- \n",
+    "result": "首次由任务转换的记录无时间，随后直接输入的普通记录有时间"
+  },
+  "after": {
+    "version": "0.1.1",
+    "date": "2026-10-21T04:47:36.571Z",
+    "method": "与before相同的实际Windows中文输入法及原生按键步骤",
+    "passed": true,
+    "actual": "# 普通记录修复验收\n\n- [ ] 父任务\n\t- 啊 20261021 12:47\n\t- \n",
+    "siblingIndent": {
+      "passed": true,
+      "steps": [
+        "新普通空列表ShiftTab退到同级",
+        "实际中文a+Space输入",
+        "Tab缩进为任务子列表",
+        "Enter"
+      ],
+      "actual": "# 普通记录修复验收\n\n- [ ] 父任务\n\t- 啊 20261021 12:47\n\t- 啊 20261021 12:47\n\t- \n"
+    },
+    "package": {
+      "path": "dist/todotimer-0.1.1.zip",
+      "sha256": "c88dde8199d9eea93368a5b73c52cedc0bbce989d576dd1aa02d7ed1a6abffd0",
+      "bytes": 20979,
+      "hostFilesIdentical": true
+    }
+  }
+}

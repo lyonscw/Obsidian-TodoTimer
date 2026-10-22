@@ -1,0 +1,9 @@
+{
+  "id": "todotimer",
+  "name": "TodoTimer",
+  "version": "0.1.3",
+  "minAppVersion": "1.12.7",
+  "description": "为 Markdown 任务、子任务和进展记录自动添加创建与完成时间。",
+  "author": "LyonsCW",
+  "isDesktopOnly": true
+}

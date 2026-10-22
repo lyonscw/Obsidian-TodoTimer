@@ -1,0 +1,144 @@
+{
+  "runAt": "2026-10-21T04:46:37.175Z",
+  "version": "1.14.4",
+  "pluginVersion": "0.1.1",
+  "checks": [
+    {
+      "name": "plugin loaded",
+      "passed": true
+    },
+    {
+      "name": "host CodeMirror view available",
+      "passed": true
+    },
+    {
+      "name": "new task on Enter",
+      "passed": true,
+      "actual": "- [ ] 真机新任务 [🆕] 20261021 12:46\n"
+    },
+    {
+      "name": "old task completion only",
+      "passed": true,
+      "actual": "- [x] 旧任务 [✅] 20261021 12:46"
+    },
+    {
+      "name": "checkbox + timestamp undo together",
+      "passed": true,
+      "actual": "- [ ] 旧任务"
+    },
+    {
+      "name": "redo restores original completion",
+      "passed": true,
+      "actual": "- [x] 旧任务 [✅] 20261021 12:46"
+    },
+    {
+      "name": "uncheck removes completion",
+      "passed": true,
+      "actual": "- [ ] 旧任务"
+    },
+    {
+      "name": "ordinary record bare timestamp",
+      "passed": true,
+      "actual": "- [ ] 父任务\n  - 等待：开通网络 20261021 12:46\n"
+    },
+    {
+      "name": "new child task converted to record keeps bare timestamp",
+      "passed": true,
+      "actual": "- [ ] 父任务\n\t- 新进展 20261021 12:46\n\t- "
+    },
+    {
+      "name": "old child task converted to record is not backfilled",
+      "passed": true,
+      "actual": "- [ ] 父任务\n\t- 新进展\n\t- "
+    },
+    {
+      "name": "new ordinary sibling becomes timed record after indent",
+      "passed": true,
+      "actual": "- [ ] 父任务\n\t- 等待审批 20261021 12:46"
+    },
+    {
+      "name": "old ordinary sibling indent is not backfilled",
+      "passed": true,
+      "actual": "- [ ] 父任务\n\t- 等待审批"
+    },
+    {
+      "name": "pasted ordinary sibling indent is not backfilled",
+      "passed": true,
+      "actual": "- [ ] 父任务\n\t- 等待审批"
+    },
+    {
+      "name": "old ordinary sibling manual space indent is not backfilled",
+      "passed": true,
+      "actual": "- [ ] 父任务\n  - 等待审批"
+    },
+    {
+      "name": "pasted ordinary sibling manual space indent is not backfilled",
+      "passed": true,
+      "actual": "- [ ] 父任务\n  - 等待审批"
+    },
+    {
+      "name": "paste preserved",
+      "passed": true,
+      "actual": "- [ ] 粘贴旧记录"
+    },
+    {
+      "name": "native-style conversion + file switch",
+      "passed": true,
+      "actual": "- [ ] 普通段落 [🆕] 20261021 12:46"
+    },
+    {
+      "name": "reading nested duplicate maps exact line",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [x] 相同任务 [✅] 20261021 12:46\n- [ ] 相同任务\n- [ ] A &amp; B\n"
+    },
+    {
+      "name": "reading uncheck removes only completion",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [ ] 相同任务\n- [ ] 相同任务\n- [ ] A &amp; B\n"
+    },
+    {
+      "name": "reading HTML entity keeps original Markdown",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [ ] 相同任务\n- [ ] 相同任务\n- [x] A &amp; B [✅] 20261021 12:46\n"
+    },
+    {
+      "name": "reading rapid toggle retains final unchecked state",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [ ] 相同任务\n- [ ] 相同任务\n- [x] A &amp; B [✅] 20261021 12:46\n"
+    },
+    {
+      "name": "reading and source split synchronize once",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [ ] 相同任务\n- [x] 相同任务 [✅] 20261021 12:46\n- [x] A &amp; B [✅] 20261021 12:46\n"
+    },
+    {
+      "name": "reading write undo through source editor",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [ ] 相同任务\n- [ ] 相同任务\n- [x] A &amp; B [✅] 20261021 12:46\n"
+    },
+    {
+      "name": "raw source preserves full Markdown without decorations",
+      "passed": true,
+      "actual": "# 阅读验收\n\n- [ ] 相同任务 [🆕] 20260101 17:00\n  - [ ] 相同任务\n- [ ] 相同任务\n- [x] A &amp; B [✅] 20261021 12:46\n"
+    },
+    {
+      "name": "Live Preview restores timestamp decorations",
+      "passed": true
+    },
+    {
+      "name": "plugin disabled without changing existing content",
+      "passed": true
+    },
+    {
+      "name": "disabled plugin does not timestamp input",
+      "passed": true,
+      "actual": "- [ ] disabled task\n"
+    },
+    {
+      "name": "re-enabled plugin timestamps once",
+      "passed": true,
+      "actual": "- [ ] enabled task [🆕] 20261021 12:46\n"
+    }
+  ],
+  "errors": []
+}

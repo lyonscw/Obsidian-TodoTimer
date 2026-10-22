@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-21",
+  "before": {
+    "version": "0.1.1",
+    "method": "真实Obsidian事件记录",
+    "events": [
+      {
+        "seq": 69,
+        "time": "2026-10-21T05:35:27.112Z",
+        "kind": "cm.update",
+        "path": "提前记时新任务.md",
+        "source": "# 提前记时新任务\n\n- [ ] 啊 [🆕] 20261021 13:35\n- [ ] 测试地方",
+        "sourceLength": 49,
+        "viewId": 1,
+        "hasFocus": true,
+        "selection": {
+          "mainIndex": 0,
+          "ranges": [
+            {
+              "anchor": 49,
+              "head": 49,
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        "activeElement": "DIV",
+        "activeElementClass": "cm-content cm-lineWrapping",
+        "previousPath": "提前记时新任务.md",
+        "nextPath": "提前记时新任务.md",
+        "docChanged": false,
+        "selectionSet": false,
+        "focusChanged": false,
+        "viewportChanged": false,
+        "transactions": [
+          {
+            "userEvent": null,
+            "remote": null,
+            "docChanged": false,
+            "selectionSet": false,
+            "selection": {
+              "mainIndex": 0,
+              "ranges": [
+                {
+                  "anchor": 49,
+                  "head": 49
+                }
+              ]
+            },
+            "effects": [],
+            "reconfigured": false,
+            "changes": [
+              49
+            ]
+          }
+        ]
+      },
+      {
+        "seq": 70,
+        "time": "2026-10-21T05:35:28.682Z",
+        "kind": "vault.modify",
+        "path": "提前记时新任务.md",
+        "source": "# 提前记时新任务\n\n- [ ] 啊 [🆕] 20261021 13:35\n- [ ] 测试地方",
+        "sourceLength": 49,
+        "viewId": 1,
+        "hasFocus": true,
+        "selection": {
+          "mainIndex": 0,
+          "ranges": [
+            {
+              "anchor": 49,
+              "head": 49,
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        "activeElement": "DIV",
+        "activeElementClass": "cm-content cm-lineWrapping",
+        "eventTime": "2026-10-21T05:35:28.681Z"
+      },
+      {
+        "seq": 71,
+        "time": "2026-10-21T05:35:32.190Z",
+        "kind": "dom.blur",
+        "path": "提前记时新任务.md",
+        "source": "# 提前记时新任务\n\n- [ ] 啊 [🆕] 20261021 13:35\n- [ ] 测试地方",
+        "sourceLength": 49,
+        "viewId": 1,
+        "hasFocus": false,
+        "selection": {
+          "mainIndex": 0,
+          "ranges": [
+            {
+              "anchor": 49,
+              "head": 49,
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        "activeElement": "BODY",
+        "activeElementClass": "mod-windows is-frameless is-hidden-frameless obsidian-app styled-scrollbars theme-light show-inline-title is-floating-nav auto-full-screen show-ribbon show-view-header is-focused",
+        "isTrusted": true,
+        "data": null,
+        "relatedTarget": null
+      },
+      {
+        "seq": 72,
+        "time": "2026-10-21T05:35:32.191Z",
+        "kind": "cm.update",
+        "path": "提前记时新任务.md",
+        "source": "# 提前记时新任务\n\n- [ ] 啊 [🆕] 20261021 13:35\n- [ ] 测试地方 [🆕] 20261021 13:35",
+        "sourceLength": 69,
+        "viewId": 1,
+        "hasFocus": false,
+        "selection": {
+          "mainIndex": 0,
+          "ranges": [
+            {
+              "anchor": 49,
+              "head": 49,
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        "activeElement": "BODY",
+        "activeElementClass": "mod-windows is-frameless is-hidden-frameless obsidian-app styled-scrollbars theme-light show-inline-title is-floating-nav auto-full-screen show-ribbon show-view-header is-focused",
+        "previousPath": "提前记时新任务.md",
+        "nextPath": "提前记时新任务.md",
+        "docChanged": true,
+        "selectionSet": false,
+        "focusChanged": true,
+        "viewportChanged": true,
+        "transactions": [
+          {
+            "userEvent": null,
+            "remote": null,
+            "docChanged": true,
+            "selectionSet": false,
+            "selection": {
+              "mainIndex": 0,
+              "ranges": [
+                {
+                  "anchor": 49,
+                  "head": 49
+                }
+              ]
+            },
+            "effects": [
+              {
+                "typeId": 10,
+                "value": null
+              },
+              {
+                "typeId": 9,
+                "value": null
+              }
+            ],
+            "reconfigured": false,
+            "changes": [
+              49,
+              [
+                0,
+                " [🆕] 20261021 13:35"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "finding": "原文与光标仍在同一任务行，dom.blur后立即补创建时间；没有换行或移出当前行。"
+  },
+  "after": {
+    "version": "0.1.2",
+    "automatedTests": 105,
+    "typecheck": "passed",
+    "visualRetest": "stopped at user request",
+    "fullHostRetest": "not completed",
+    "package": {
+      "files": [
+        "todotimer/main.js",
+        "todotimer/manifest.json",
+        "todotimer/styles.css"
+      ],
+      "bytes": 21711,
+      "sha256": "1e0324ddfd34981dfa4bd330d188502953f8cac4d1bb26b864744243ba91cbed"
+    }
+  }
+}
